@@ -1,0 +1,21 @@
+{
+	"name": "obsidiankit",
+	"version": "1.0.0",
+	"description": "Obsidian Pluralkit importer",
+	"main": "main.js",
+	"type": "module",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "node esbuild.config.mjs production"
+	},
+	"keywords": [],
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^22.20.1",
+		"esbuild": "0.25.12",
+		"globals": "^17.6.0",
+		"jiti": "^2.6.1",
+		"obsidian": "latest",
+		"typescript": "^5.8.3"
+	}
+}
