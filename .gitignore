@@ -25,3 +25,6 @@ data.json
 # test files
 src/test.js
 src/pk/PKGroup.js
+
+# ??
+.github

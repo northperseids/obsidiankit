@@ -1,0 +1,22 @@
+.howto {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.howto__title {
+    font-weight: 600;
+    font-size: larger;
+    margin: 10px;
+}
+
+.howto__text {
+    color: var(--text-muted);
+    font-size: medium;
+    margin: 10px;
+}
+
+a {
+    margin: 10px;
+}
