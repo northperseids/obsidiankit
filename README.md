@@ -18,11 +18,11 @@ The only REQUIRED field is the System File Path, which should be the full absolu
 
 All other settings are optional, but you may want to customize it further.
 
-You may get unexpected formatting in some fields, depending on the characters used in your PluralKit names, descriptions, and so on. See **Code Blocks** under [Settings](Settings.md) for more information.
+You may get unexpected formatting in some fields, depending on the characters used in your PluralKit names, descriptions, and so on. See **Code Blocks** below for more information.
 
-You can also specify different profile templates if you want. See **Templates** under [Settings](Settings.md) for more information.
+You can also specify different profile templates if you want. See **Templates** below for more information.
 
-> ObsidianKit replaces __ALL__ slashes, square brackets, and bar/pipe characters in folder and note/file names with a visually-similar Unicode equivalent. This is because a file name involving those characters is typically invalid on many computers, or it interferes with Obsidian's formatting. See below for more information.
+> NOTE: ObsidianKit replaces __ALL__ slashes, square brackets, and bar/pipe characters in folder and note/file names with a visually-similar Unicode equivalent. This is because a file name involving those characters is typically invalid on many computers, or it interferes with Obsidian's formatting. See **Character Replacements in Filenames**.
 
 # Settings/Customization
 
@@ -42,19 +42,19 @@ You can also specify different profile templates if you want. See **Templates** 
 ## Templates
 | Setting                 | Default                                           | Definition                                                                                   |
 | ----------------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| System Profile Template | [Default System Profile](DefaultSystemProfile.md) | Markdown template used for System Profile page                                               |
-| Member Profile Template | [Default Member Profile](DefaultMemberProfile.md) | Markdown template used for Member Profile pages                                              |
+| System Profile Template | Default System Profile | Markdown template used for System Profile page                                               |
+| Member Profile Template | Default Member Profile | Markdown template used for Member Profile pages                                              |
 | Keep empty values       | `ON`                                              | Fills in text for empty values. i.e. *No birthday found.* if a member has no listed birthday |
 > If using the Default markdown templates, toggling **Keep empty values** `OFF` will also remove the associated header text for empty sections. **ObsidianKit will ONLY do this for the DEFAULT TEMPLATES, though.**
 
-## Custom Templates
+### Custom Templates
 The easiest way to make a custom template is to create a new Obsidian note, format it however you like using the curly-bracketed variables from the table below, and then right-click on the note in Obsidian and choose **Select as System Template** or **Select as Member Template**.
 
 You can also enter an absolute path to a markdown .md file containing your template in the settings dialogue if you want.
 
 If you want to go back to using the default templates, just leave the template text box blank.
 
-# Code Blocks
+## Code Blocks
 Many people use characters decoratively in PluralKit fields that may render strangely in Markdown formatting. ObsidianKit provides toggles to place different fields in `code blocks` to prevent decorative characters from being rendered as Markdown formatting.
 
 | Setting                                  | Default | Definition                                                                       |
@@ -63,7 +63,7 @@ Many people use characters decoratively in PluralKit fields that may render stra
 | Prevent markdown in descriptions         | `ON`    | Places three backticks around descriptions (so it renders as a whole code block) |
 | Prevent markdown in miscellaneous fields | `OFF`   | Places backticks around system tag, pronouns, and proxy tags                     |
 
-# Character Replacements in Filenames
+## Character Replacements in Filenames
 Obsidian and computer filenames can't use square brackets `[]`, slashes `/ \`, or bar/pipe characters `|` easily because those can mess up formatting in Obsidian and filenames on computers. ObsidianKit replaces these characters with ones that look similar, but aren't technically the same.
 
 (You can specify your own replacement characters in the settings if you want.)
